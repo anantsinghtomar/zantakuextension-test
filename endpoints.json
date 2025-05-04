@@ -1,0 +1,34 @@
+{
+  "base_url": "https://api.consumet.org",
+  "services": {
+    "anime": {
+      "gogoanime": {
+        "search": "/anime/gogoanime/{query}",
+        "info": "/anime/gogoanime/info/{id}",
+        "watch": "/anime/gogoanime/watch/{episodeId}"
+      },
+      "zoro": {
+        "search": "/anime/zoro/{query}",
+        "info": "/anime/zoro/info?id={id}"
+      },
+      "animekai": {
+        "search": "/anime/animekai/{query}",
+        "info": "/anime/animekai/info?id={id}",
+        "watch": "/anime/animekai/watch/{episodeId}"
+      }
+    },
+    "movies": {
+      "flixhq": {
+        "search": "/movies/flixhq/{query}",
+        "info": "/movies/flixhq/info?id={id}"
+      }
+    },
+    "tv": {
+      "flixhq": {
+        "search": "/tv/flixhq/{query}",
+        "info": "/tv/flixhq/info?id={id}"
+      }
+    }
+  },
+  "notes": "Replace {query}, {id}, and {episodeId} with actual values. Append '?page=n' for pagination if needed."
+}
